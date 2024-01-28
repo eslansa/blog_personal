@@ -1,5 +1,6 @@
 import {client } from "@/../sanity/lib/client"
 import Header from "@/components/Header";
+import PostComponent from "@/components/PostComponent";
 import { Post } from "@/utils/interface";
 
 async function getPosts(){
@@ -9,11 +10,19 @@ async function getPosts(){
     slug,
     publishedAt,
     excerpt,
+    tags[]-> {
+      _id,
+      slug,
+      name
+    }
   }
   `;
   const data = await client.fetch(query);
   return data;
 }
+
+// export const revalidate = 60;
+
 export default async function Home() {
   const posts: Post[] = await getPosts()
   console.log(posts, 'posts')
@@ -22,7 +31,7 @@ export default async function Home() {
       <Header title="Articles" />
       <div>
     {posts?.length > 0 && posts?.map((post) =>(
-      <p key={post._id}>{post.title}</p>
+      <PostComponent key={post._id} post={post} />
     ))}
       </div>
     </div>

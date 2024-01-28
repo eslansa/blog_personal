@@ -9,7 +9,7 @@ export interface Post {
 }
 
 export interface Tag {
-    namew: string;
+    name: string;
     slug: { current: string };
     _id: string;
 }

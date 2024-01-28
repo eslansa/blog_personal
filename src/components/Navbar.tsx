@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
-import ThemeSwitch from './ThemeSwitch'
+
 import { Lilita_One } from 'next/font/google'
+import ThemeSwitch from './ThemeSwitch';
 
 const font = Lilita_One({ weight: "400", subsets: ["latin"] });
 
