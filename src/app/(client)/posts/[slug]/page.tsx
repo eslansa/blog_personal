@@ -8,6 +8,7 @@ import { PortableText } from '@portabletext/react';
 import { tag } from '../../../../../sanity/schemas/tag';
 import Image from 'next/image';
 import { urlForImage } from '../../../../../sanity/lib/image';
+import { notFound } from 'next/navigation';
 
 interface Params {
   params: {
@@ -37,9 +38,16 @@ async function getPost(slug: string) {
   const post = await client.fetch(query)
   return post;
 }
+
+export const revalidate = 60;
 const page = async ({ params }: Params) => {
   console.log(params, "params")
   const post: Post = await getPost(params?.slug)
+
+  if(!post) {
+    notFound();
+  }
+
   return (
     <div>
       <Header title={post?.title} />
