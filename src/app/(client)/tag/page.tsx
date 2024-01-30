@@ -4,7 +4,7 @@ import { Tag } from '@/utils/interface';
 import Header from '@/components/Header';
 import Link from 'next/link';
 
-export const runtime = 'edge';
+export const runtime = 'edge' // 'nodejs' (default) | 'edge'
 
 async function getAllTags() {
     const query = `

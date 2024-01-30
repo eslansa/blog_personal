@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import PostComponent from "@/components/PostComponent";
 import { Post } from "@/utils/interface";
 
+export const runtime = 'edge' // 'nodejs' (default) | 'edge'
+
 async function getPosts(){
   const query = `
   *[_type == "post"] {

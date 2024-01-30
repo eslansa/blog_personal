@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "../../components/Navbar";
 import { Provider } from "@/utils/Provider";
 
+export const runtime = 'edge' // 'nodejs' (default) | 'edge'
+
 const inter = Inter({ subsets: ["latin"] });
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
