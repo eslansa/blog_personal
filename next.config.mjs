@@ -1,4 +1,5 @@
-const { EnvironmentPlugin } = require('webpack');
+import { EnvironmentPlugin } from 'webpack';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
