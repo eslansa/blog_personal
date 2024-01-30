@@ -3,7 +3,7 @@ const { EnvironmentPlugin } = pkg;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
+        images: {
         domains: [
             "cdn.sanity.io"
         ],

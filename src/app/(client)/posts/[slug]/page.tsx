@@ -10,6 +10,8 @@ import Image from 'next/image';
 import { urlForImage } from '../../../../../sanity/lib/image';
 import { notFound } from 'next/navigation';
 
+export const runtime = 'edge';
+
 interface Params {
   params: {
     slug: string;

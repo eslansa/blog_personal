@@ -4,6 +4,8 @@ import { Tag } from '@/utils/interface';
 import Header from '@/components/Header';
 import Link from 'next/link';
 
+export const runtime = 'edge';
+
 async function getAllTags() {
     const query = `
     *[_type == "tag"] {
