@@ -25,9 +25,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${firaCode.className} h-full bg-amber-50 text-indigo-950 dark:bg-slate-950 dark:text-amber-50 dark:selection:bg-red-500`}>
         <Provider>
-          <Head>
-            <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-          </Head>
           <Navbar />
           <main className="mx-auto max-w-5xl px-6">
             {children}
