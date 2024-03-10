@@ -1,21 +1,20 @@
 import Image from "next/image";
 import { SiNextdotjs, SiPostgresql, SiReact, SiTypescript } from "react-icons/si";
 
-export const runtime = 'edge' // 'nodejs' (default) | 'edge'
+export const runtime = 'edge'; // 'nodejs' (default) | 'edge'
 
 export default function Page() {
-  return (
-    <div className='flex flex-col items-center justify-center mb-2 p-2 text-sm dark:bg-gray-950 border dark:border-gray-90 '>
+ return (
+    <div className='flex flex-col items-center justify-center mb-2 p-2 text-sm dark:bg-gray-950 border dark:border-gray-90 text-justify'>
       <div className="w-32 h-32 rounded-full overflow-hidden mb-4 relative">
         <Image
           src="/avatar.webp"
           alt="Avatar"
           layout="fill"
-          objectFit="cover"
-          quality={70} // Ajusta la calidad de la imagen para reducir el tamaño del archivo
-          loading="lazy" // Asegura que la imagen se cargue de manera diferida
-        />
-
+          quality={70}
+          loading="lazy" 
+        >
+        </Image>
       </div>
       <span className="text-2xl font-bold mb-4">Hola! Soy Eslán.</span>
       <p className="mb-4 text-center font-sans text-lg">
@@ -44,5 +43,5 @@ export default function Page() {
         <li className="mb-1 flex items-center justify-center">PostgreSQL <SiPostgresql className="ml-2" size={24} /></li>
       </ul>
     </div>
-  );
+ );
 }
