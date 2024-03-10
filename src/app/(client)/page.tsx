@@ -1,4 +1,3 @@
-import Head from "@/components/Head";
 import Image from "next/image";
 import { SiNextdotjs, SiPostgresql, SiReact, SiTypescript } from "react-icons/si";
 
@@ -7,7 +6,6 @@ export const runtime = 'edge' // 'nodejs' (default) | 'edge'
 export default function Page() {
   return (
     <div className='flex flex-col items-center justify-center mb-2 p-2 text-sm dark:bg-gray-950 border dark:border-gray-90 '>
-      <Head />
       <div className="w-32 h-32 rounded-full overflow-hidden mb-4 relative">
         <Image
           src="/avatar.webp"

@@ -3,7 +3,6 @@ import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "../../components/Navbar";
 import { Provider } from "@/utils/Provider";
-import Head from "next/head";
 import Footer from "@/components/Footer";
 
 export const runtime = 'edge' // 'nodejs' (default) | 'edge'
@@ -14,6 +13,9 @@ const firaCode = Fira_Code({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "eslansaBlog",
   description: "Blog de Eslán Sánchez Alvarez, artículos, información y más sobre el mundo web.",
+  verification: {
+    google: '7pY3HSqGDEy_LyhtYnPQmWomQGWQkC740Gmb9Qk6_FI',
+  },
 };
 
 export default function RootLayout({
