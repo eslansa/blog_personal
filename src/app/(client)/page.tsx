@@ -7,7 +7,7 @@ export default function Page() {
  return (
     <div className='flex flex-col items-center justify-center mb-2 p-2 text-sm dark:bg-gray-950 border dark:border-gray-90 '>
       <div className="w-32 h-32 rounded-full overflow-hidden mb-4 relative">
-        <Image src="/avatar.jpg" alt="Avatar" layout="fill" objectFit="cover" />
+        <Image src="/avatar.webp" alt="Avatar" layout="fill" objectFit="cover" />
       </div>
       <span className="text-2xl font-bold mb-4">Hola! Soy Eslán.</span>
       <p className="mb-4 text-center">
