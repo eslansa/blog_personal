@@ -4,18 +4,28 @@ import { SiNextdotjs, SiPostgresql, SiReact, SiTypescript } from "react-icons/si
 export const runtime = 'edge' // 'nodejs' (default) | 'edge'
 
 export default function Page() {
- return (
+  return (
     <div className='flex flex-col items-center justify-center mb-2 p-2 text-sm dark:bg-gray-950 border dark:border-gray-90 '>
       <div className="w-32 h-32 rounded-full overflow-hidden mb-4 relative">
-        <Image src="/avatar.webp" alt="Avatar" layout="fill" objectFit="cover" />
+        <Image
+          src="/avatar.webp"
+          alt="Avatar"
+          layout="fill"
+          objectFit="cover"
+          quality={75} // Ajusta la calidad de la imagen para reducir el tamaño del archivo
+          loading="lazy" // Asegura que la imagen se cargue de manera diferida
+        />
+
       </div>
       <span className="text-2xl font-bold mb-4">Hola! Soy Eslán.</span>
-      <p className="mb-4 text-center">
-      Apasionado del desarrollo frontend, me defino por ser
-una persona con ganas de aprender muy creativo y
-espontáneo. Me gustan los retos. Estoy en la
-universidad terminando mis estudios y trabajando a la
-vez.    </p>
+      <p className="mb-4 text-center font-sans text-lg">
+        Apasionado del desarrollo frontend, me defino por ser
+        una persona con ganas de aprender muy creativo y
+        espontáneo. Me gustan los retos. Estoy en la
+        universidad terminando mis estudios y trabajando a la
+        vez.
+      </p>
+
       <h2 className="text-xl font-semibold mb-2">Experiencia Laboral</h2>
       <ul className="list-disc pl-5 text-center">
         <li className="mb-1">Desarrollador Web - Autodidacta (2024)</li>
@@ -34,5 +44,5 @@ vez.    </p>
         <li className="mb-1 flex items-center justify-center">PostgreSQL <SiPostgresql className="ml-2" size={24} /></li>
       </ul>
     </div>
- );
+  );
 }

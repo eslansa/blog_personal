@@ -31,9 +31,9 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className='py-2 hover:text-red-500'>
-                        <Link href='https://drive.google.com/file/d/1Vrleigq1aDQf9GG-_3zfHdXTf6_V8cdE/view'>
+                        <a href='https://drive.google.com/file/d/1Vrleigq1aDQf9GG-_3zfHdXTf6_V8cdE/view' target="_blank" rel="noopener noreferrer">
                             <span className=''><BiSolidDetail size={29} /></span>
-                        </Link>
+                        </a>
                     </div>
 
                 </div>
