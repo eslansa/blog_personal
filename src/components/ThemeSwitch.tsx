@@ -1,19 +1,10 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useTheme } from 'next-themes';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeSwitch = () => {
  const { theme, setTheme } = useTheme();
- const [mounted, setMounted] = useState(false);
-
- useEffect(() => {
-    setMounted(true);
- }, []);
-
- if (!mounted) {
-    return null;
- }
 
  // Determine the accessible name based on the current theme
  const change_mode = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';

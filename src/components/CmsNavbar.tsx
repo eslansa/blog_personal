@@ -13,7 +13,7 @@ const CmsNavbar = () => {
       </Link>
       <div className= {`${ font.className} text-3xl dark:text-amber-50`}>
                     eslansa 
-                    <span className=' text-purple-500'>Blog</span>
+                    <span className=' text-red-500'>Blog</span>
                 </div>
     </div>
   )

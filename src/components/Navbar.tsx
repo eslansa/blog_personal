@@ -14,8 +14,8 @@ const Navbar = () => {
                 <Link href='/'>
                     <div className='group '>
                         <div className={`${font.className} text-4xl py-2`}>
-                            <span className='text-black group-hover:text-red-500 dark:text-amber-50'>eslan</span>
-                            <span className='text-red-500 group-hover:text-black group-hover:dark:text-amber-50'>sa</span>
+                            <span className=' group-hover:text-red-500 dark:text-amber-50'>eslan</span>
+                            <span className='text-red-500 group-hover:text-slate-800 group-hover:dark:text-amber-50'>sa</span>
                         </div>
                     </div>
 

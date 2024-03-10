@@ -12,7 +12,7 @@ export default function Page() {
           alt="Avatar"
           layout="fill"
           objectFit="cover"
-          quality={75} // Ajusta la calidad de la imagen para reducir el tamaño del archivo
+          quality={70} // Ajusta la calidad de la imagen para reducir el tamaño del archivo
           loading="lazy" // Asegura que la imagen se cargue de manera diferida
         />
 

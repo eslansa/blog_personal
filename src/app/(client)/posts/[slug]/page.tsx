@@ -54,14 +54,14 @@ const page = async ({ params }: Params) => {
     <div>
       <Header title={post?.title} />
       <div className=' text-center'>
-        <span className={`${dateFont?.className} text-purple-500`}>
+        <span className={`${dateFont?.className} text-red-500`}>
           {new Date(post?.publishedAt).toDateString()}
         </span>
         <div className=' mt-3'>
           {post?.tags?.map((tag) => {
             return (
               <Link key={tag?._id} href={`/tag/${tag.slug.current}`} >
-                <span className=' mr-2 p-1 rounded-sm text-sm lowercase dark:bg-gray-950 border dark:border-gray-900'>
+                <span className=' mr-2 p-1 rounded-sm text-sm lowercase dark:bg-gray-950 border dark:border-gray-900 mt-2 hover:text-red-500 dark:border-gray-90 px-2 py-1 shadow-sm max-w-xs mx-auto'>
                   {tag.name}
                 </span>
               </Link>
