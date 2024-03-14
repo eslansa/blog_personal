@@ -11,7 +11,7 @@ const Footer = () => {
         <a href="https://github.com/eslansa" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
           <FaGithub size={30} />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+        <a href="https://www.linkedin.com/in/eslan-sanchez-alvarez-346773241/" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
           <FaLinkedin size={30} />
         </a>
       </div>

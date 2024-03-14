@@ -12,7 +12,7 @@ const ThemeSwitch = () => {
  return (
     <div>
       <button
-        className='rounded-2xl p-1 hover:bg-red-400'
+        className='rounded-2xl p-1 hover:bg-red-500 dark:hover:bg-red-800'
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         aria-label={change_mode}
       >
