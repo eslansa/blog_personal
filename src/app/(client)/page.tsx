@@ -10,11 +10,9 @@ export default function Page() {
         <Image
           src="/avatar.webp"
           alt="Avatar"
-          layout="fill"
-          quality={70}
-          loading="lazy" 
-        >
-        </Image>
+          width={150}
+          height={150}
+        />
       </div>
       <span className="text-2xl font-bold mb-4">Hola! Soy Eslán.</span>
       <p className="mb-4 text-center font-sans text-lg">
