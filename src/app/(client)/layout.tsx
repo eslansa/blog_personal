@@ -12,6 +12,7 @@ const firaCode = Fira_Code({ subsets: ["latin"] });
 
 export const metadata : Metadata  = {
   generator: 'Next.js',
+  description: "Apasionado del desarrollo frontend. Eslán Sánchez Alvarez descubre el blog, donde encontrarás artículos, información y más sobre el mundo web.",
   applicationName: 'Eslán | Blog',
   referrer: 'origin-when-cross-origin',
   keywords: ['Eslán', 'eslansa', 'Blog', 'web', 'Sánchez', 'dev', 'desarrollador frontend', 'React', 'Next.js', 'TypeScript', 'PostgreSQL'],
