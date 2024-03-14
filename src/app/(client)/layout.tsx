@@ -10,29 +10,29 @@ export const runtime = 'edge' // 'nodejs' (default) | 'edge'
 const inter = Inter({ subsets: ["latin"] });
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
-export const metadata : Metadata = {
+export const metadata : Metadata  = {
   generator: 'Next.js',
   applicationName: 'Eslán | Blog',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Eslán', 'eslansa', 'Blog', 'web', 'Sánchez', 'dev'],
+  keywords: ['Eslán', 'eslansa', 'Blog', 'web', 'Sánchez', 'dev', 'desarrollador frontend', 'React', 'Next.js', 'TypeScript', 'PostgreSQL'],
   authors: [{ name: 'Eslán' }, { name: 'Sánchez', url: 'https://eslan.pages.dev' }],
   creator: 'Eslán Sánchez',
   publisher: 'Eslan Sanchez',
   formatDetection: {
-     email: true,
-     address: false,
-     telephone: false,
+    email: true,
+    address: false,
+    telephone: false,
   },
   title: {
-     template: 'Eslán | Blog',
-     default: 'Eslan Sanchez', // a default is required when creating a template
+    template: 'Eslán | Blog',
+    default: 'Eslán | Blog', // a default is required when creating a template
   },
   openGraph: {
-     title: 'Eslán | Blog',
-     description: "Eslán Sánchez Alvarez descubre el blog de , donde encontrarás artículos, información y más sobre el mundo web.",
-     url: 'https://eslan.pages.dev',
-     siteName: 'Eslan Sanchez',
-     images: [
+    title: 'Eslán | Blog',
+    description: "Apasionado del desarrollo frontend. Eslán Sánchez Alvarez descubre el blog, donde encontrarás artículos, información y más sobre el mundo web.",
+    url: 'https://eslan.pages.dev',
+    siteName: 'Eslan Sanchez',
+    images: [
       {
         url: 'https://eslan.pages.dev/_next/image?url=%2Favatar.webp&w=1920&q=70', // Must be an absolute URL
         width: 800,
@@ -47,12 +47,12 @@ export const metadata : Metadata = {
     ],
     locale: 'es_ES',
     type: 'website',
-    },
-  verification: {
-     google: '7pY3HSqGDEy_LyhtYnPQmWomQGWQkC740Gmb9Qk6_FI',
   },
- };
- 
+  verification: {
+    google: '7pY3HSqGDEy_LyhtYnPQmWomQGWQkC740Gmb9Qk6_FI',
+  },
+};
+
 
 export default function RootLayout({
   children,
