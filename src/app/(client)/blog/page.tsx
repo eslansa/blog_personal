@@ -7,18 +7,20 @@ export const runtime = 'edge' // 'nodejs' (default) | 'edge'
 
 async function getPosts(){
   const query = `
-  *[_type == "post"] {
-    title,
+*[_type == "post"] {
+  title,
+  slug,
+  _createdAt,
+  publishedAt,
+  excerpt,
+  tags[]-> {
+    _id,
     slug,
-    publishedAt,
-    excerpt,
-    tags[]-> {
-      _id,
-      slug,
-      name
-    }
+    name
   }
-  `;
+} | order(_createdAt desc)
+`;
+
   const data = await client.fetch(query);
   return data;
 }
