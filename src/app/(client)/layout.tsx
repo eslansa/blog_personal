@@ -12,7 +12,7 @@ const firaCode = Fira_Code({ subsets: ["latin"] });
 
 export const metadata : Metadata  = {
   generator: 'Next.js',
-  description: "Apasionado del desarrollo frontend. Eslán Sánchez Alvarez descubre el blog, donde encontrarás artículos, información y más sobre el mundo web.",
+  description: "Bienvenido a mi Blog! Soy Eslán Sánchez.Estudiante de Ingienería en Ciencias Informáticas, Desarrollador Web. Soy de Cuba, tengo 22 años.",
   applicationName: 'Eslán | Blog',
   referrer: 'origin-when-cross-origin',
   keywords: ['Eslán', 'eslansa', 'Blog', 'web', 'Sánchez', 'dev', 'desarrollador frontend', 'React', 'Next.js', 'TypeScript', 'PostgreSQL'],
@@ -30,15 +30,10 @@ export const metadata : Metadata  = {
   },
   openGraph: {
     title: 'Eslán | Blog',
-    description: "Apasionado del desarrollo frontend. Eslán Sánchez Alvarez descubre el blog, donde encontrarás artículos, información y más sobre el mundo web.",
+    description: "Bienvenido a mi Blog! Soy Eslán Sánchez.Estudiante de Ingienería en Ciencias Informáticas, Desarrollador Web. Soy de Cuba, tengo 22 años.",
     url: 'https://eslan.pages.dev',
-    siteName: 'Eslan Sanchez',
+    siteName: 'Eslán | Blog',
     images: [
-      {
-        url: 'https://eslan.pages.dev/_next/image?url=%2Favatar.webp&w=1920&q=70', // Must be an absolute URL
-        width: 800,
-        height: 600,
-      },
       {
         url: 'https://eslan.pages.dev/_next/image?url=%2Favatar.webp&w=1920&q=70', // Must be an absolute URL
         width: 1800,
