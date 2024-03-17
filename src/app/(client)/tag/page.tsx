@@ -26,7 +26,7 @@ const page = async () => {
 
   return (
     <div>
-       <Header title="Tags" />
+       <Header title="Temas" />
        <div>
         {tags?.length > 0 && tags?.map((tag) => 
           <Link key={tag?._id} href={`/tag/${tag.slug.current}`}>
