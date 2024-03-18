@@ -5,7 +5,7 @@ export const runtime = 'edge';
 export default function Page() {
   return (
     <>
-      <div className='flex flex-col items-center justify-center mb-2 p-2 text-sm dark:bg-gray-950 border dark:border-gray-90 text-center'>
+      <section className='flex flex-col items-center justify-center mb-2 p-2 text-sm dark:bg-gray-950 border dark:border-gray-90 text-center'>
         <div className="w-32 h-32 rounded-full overflow-hidden mb-4 relative">
           <Image
             src="/avatar.webp"
@@ -36,7 +36,7 @@ export default function Page() {
           <li className="mb-1 flex items-center justify-center">TypeScript <SiTypescript className="ml-2" size={24} /></li>
           <li className="mb-1 flex items-center justify-center">PostgreSQL <SiPostgresql className="ml-2" size={24} /></li>
         </ul>
-      </div>
+      </section>
     </>
   );
 }
