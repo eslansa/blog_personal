@@ -17,7 +17,7 @@ export default function Page() {
         <h1 className="text-2xl font-bold mb-4">Bienvenido a mi Blog! Soy Eslán Sánchez.</h1>
         <p className="mb-4 text-center font-sans text-lg">
           Estudiante de <strong>Ingienería en Ciencias Informáticas</strong>,
-          Desarrollador Web. Soy de Cuba, tengo 22 años. Me defino por ser una persona con ganas de aprender, creativo y espontáneo. Me gustan los retos. Estoy en la universidad terminando mis estudios y trabajando a la vez.
+          Desarrollador Web. Soy de Cuba, tengo 22 años. Me defino por ser una persona con ganas de aprender, creativo y espontáneo. Me gustan los retos. 
         </p>
         <h2 className="text-xl font-semibold mb-2">Experiencia Laboral</h2>
         <ul className="list-disc pl-5 text-center">
