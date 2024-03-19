@@ -1,11 +1,19 @@
+'use client'
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { SiNextdotjs, SiPostgresql, SiReact, SiTypescript } from 'react-icons/si';
+
 export const runtime = 'edge';
 
 export default function Page() {
   return (
     <>
-      <section className='flex flex-col items-center justify-center mb-2 p-2 text-sm dark:bg-gray-950 border dark:border-gray-90 text-center'>
+      <motion.section 
+        className='flex flex-col items-center justify-center mb-2 p-2 text-sm dark:bg-gray-950 border dark:border-gray-90 text-center'
+        initial={{ opacity: 0, y: -90 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 1 }} 
+      >
         <div className="w-32 h-32 rounded-full overflow-hidden mb-4 relative">
           <Image
             src="/avatar.webp"
@@ -36,7 +44,7 @@ export default function Page() {
           <li className="mb-1 flex items-center justify-center">TypeScript <SiTypescript className="ml-2" size={24} /></li>
           <li className="mb-1 flex items-center justify-center">PostgreSQL <SiPostgresql className="ml-2" size={24} /></li>
         </ul>
-      </section>
+      </motion.section>
     </>
   );
 }

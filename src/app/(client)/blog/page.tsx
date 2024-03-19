@@ -1,25 +1,25 @@
-import {client } from "@/../sanity/lib/client"
-import Header from "@/components/Header";
-import PostComponent from "@/components/PostComponent";
+import { client } from "@/../sanity/lib/client";
+import PostList from "@/components/AnimatedPostComponent";
 import { Post } from "@/utils/interface";
 
-export const runtime = 'edge' // 'nodejs' (default) | 'edge'
+export const runtime = 'edge'; // 'nodejs' (default) | 'edge'
 
-async function getPosts(){
+async function getPosts() {
   const query = `
-*[_type == "post"] {
-  title,
-  slug,
-  _createdAt,
-  publishedAt,
-  excerpt,
-  tags[]-> {
-    _id,
-    slug,
-    name
-  }
-} | order(_createdAt desc)
-`;
+    *[_type == "post"] {
+      _id, // Add the _id field to uniquely identify each post
+      title,
+      slug,
+      _createdAt,
+      publishedAt,
+      excerpt,
+      tags[]-> {
+        _id,
+        slug,
+        name
+      }
+    } | order(_createdAt desc)
+  `;
 
   const data = await client.fetch(query);
   return data;
@@ -28,16 +28,11 @@ async function getPosts(){
 export const revalidate = 60;
 
 export default async function Home() {
-  const posts: Post[] = await getPosts()
+  const posts: Post[] = await getPosts();
 
   return (
     <div>
-      <Header title="Artículos" tags />
-      <div>
-    {posts?.length > 0 && posts?.map((post) =>(
-      <PostComponent key={post._id} post={post} />
-    ))}
-      </div>
+      <PostList posts={posts.map(post => ({ ...post, key: post._id }))} />
     </div>
   );
 }
