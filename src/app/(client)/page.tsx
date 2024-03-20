@@ -35,7 +35,7 @@ export default function Page() {
           <li className="mb-1">IPU - Pedro Valdivia Paz, Ciego de Ávila, Cuba (2016 - 2019)</li>
         </ul>
         <h2 className="text-xl font-semibold mb-2 text-balance">Habilidades Técnicas</h2>
-        <ul className="list-disc pl-5 text-center text-lg text-pretty">
+        <ul className="list-disc text-center text-lg text-pretty">
           <li className="mb-1 flex items-center justify-center">React <SiReact className="ml-2" size={24} /></li>
           <li className="mb-1 flex items-center justify-center">Next.js <SiNextdotjs className="ml-2" size={24} /></li>
           <li className="mb-1 flex items-center justify-center">TypeScript <SiTypescript className="ml-2" size={24} /></li>

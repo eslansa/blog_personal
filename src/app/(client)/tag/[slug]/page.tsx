@@ -2,7 +2,6 @@ import Header from '@/components/Header'
 import React from 'react'
 import { client } from '../../../../../sanity/lib/client'
 import { Post } from '@/utils/interface';
-import PostComponent from '@/components/PostComponent';
 import PostList from '@/components/AnimatedPostComponent';
 
 async function getPostsByTag(tag:string) {
