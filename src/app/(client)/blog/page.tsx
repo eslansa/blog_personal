@@ -1,5 +1,6 @@
 import { client } from "@/../sanity/lib/client";
 import PostList from "@/components/AnimatedPostComponent";
+import Header from "@/components/Header";
 import { Post } from "@/utils/interface";
 
 export const runtime = 'edge'; // 'nodejs' (default) | 'edge'
@@ -32,6 +33,7 @@ export default async function Home() {
 
   return (
     <div>
+      <Header title="Artículos" tags />
       <PostList posts={posts.map(post => ({ ...post, key: post._id }))} />
     </div>
   );

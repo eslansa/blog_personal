@@ -3,6 +3,7 @@ import React from 'react'
 import { client } from '../../../../../sanity/lib/client'
 import { Post } from '@/utils/interface';
 import PostComponent from '@/components/PostComponent';
+import PostList from '@/components/AnimatedPostComponent';
 
 async function getPostsByTag(tag:string) {
   const query = `
@@ -36,9 +37,7 @@ const page = async ({params}: Params) => {
     <div>
       <Header title={`${params?.slug}`} tags />
       <div>
-        {posts?.length > 0 && posts?.map((post) => 
-        <PostComponent key={post?._id} post={post} />
-        )}
+      <PostList posts={posts.map(post => ({ ...post, key: post._id }))} />
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ export const metadata : Metadata  = {
   description: "Bienvenido a mi Blog! Soy Eslán Sánchez.Estudiante de Ingienería en Ciencias Informáticas, Desarrollador Web. Soy de Cuba, tengo 22 años.",
   applicationName: 'Eslán | Blog',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Eslán', 'eslansa', 'Blog', 'web', 'Sánchez', 'dev', 'desarrollador frontend', 'React', 'Next.js', 'TypeScript', 'PostgreSQL'],
+  keywords: ['Eslán', 'eslansa', 'Blog', 'web', 'Sánchez', 'dev', 'desarrollador', 'React', 'Next.js', 'TypeScript', 'frontend'],
   authors: [{ name: 'Eslán' }, { name: 'Sánchez', url: 'https://eslan.pages.dev' }],
   creator: 'Eslán Sánchez',
   publisher: 'Eslan Sanchez',

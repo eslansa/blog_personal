@@ -12,7 +12,7 @@ interface PostListProps {
 const PostList: React.FC<PostListProps> = ({ posts }) => {
   return (
     <div>
-      <Header title="Artículos" tags />
+
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
         {posts?.length > 0 && posts?.map((post) => (
           <PostComponent key={post._id} post={post} />

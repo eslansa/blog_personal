@@ -53,11 +53,12 @@ const page = async ({ params }: Params) => {
   return (
     <div>
       <Header title={post?.title} />
-      <div className=' text-center'>
-        <span className={`${dateFont?.className} text-red-500`}>
-          {new Date(post?.publishedAt).toDateString()}
-        </span>
-        <div className=' mt-3'>
+      <div className='text-pretty'>
+      <span className={`${dateFont?.className} text-red-500 block text-center`}>
+  {new Date(post?.publishedAt).toDateString()}
+</span>
+
+        <div className=' mt-1 block text-center'>
           {post?.tags?.map((tag) => {
             return (
               <Link key={tag?._id} href={`/tag/${tag.slug.current}`} >
