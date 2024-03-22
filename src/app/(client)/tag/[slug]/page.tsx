@@ -1,27 +1,9 @@
 import Header from '@/components/Header'
 import React from 'react'
-import { client } from '../../../../../sanity/lib/client'
 import { Post } from '@/utils/interface';
 import PostList from '@/components/AnimatedPostComponent';
+import getPostsByTag from '@/hooks/fetchTags';
 
-async function getPostsByTag(tag:string) {
-  const query = `
-  *[_type == "post" && references(*[_type == "tag" && slug.current == "${tag}"]._id)] {
-    title,
-    slug,
-    publishedAt,
-    excerpt,
-    tags[]-> {
-      _id,
-      slug,
-      name
-    }
-  }
-  `;
-
-  const posts = await client.fetch(query);
-  return posts;
-}
 
 interface Params {
   params: {

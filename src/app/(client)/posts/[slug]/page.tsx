@@ -1,6 +1,5 @@
 import Header from '@/components/Header'
 import React from 'react'
-import { client } from '../../../../../sanity/lib/client';
 import { Post } from '@/utils/interface';
 import { VT323 } from 'next/font/google';
 import Link from 'next/link';
@@ -9,6 +8,7 @@ import { tag } from '../../../../../sanity/schemas/tag';
 import Image from 'next/image';
 import { urlForImage } from '../../../../../sanity/lib/image';
 import { notFound } from 'next/navigation';
+import getPost from '@/hooks/fetchPostSlug';
 
 export const runtime = 'edge';
 
@@ -20,26 +20,6 @@ interface Params {
 
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
-async function getPost(slug: string) {
-  const query = `
-  *[_type == "post" && slug.current == "${slug}"] [0] {
-    title,
-    slug,
-    publishedAt,
-    excerpt,
-    _id,
-    body,
-    tags[]-> {
-      _id,
-      slug,
-      name
-    }
-  }
-  `;
-
-  const post = await client.fetch(query)
-  return post;
-}
 
 export const revalidate = 60;
 const page = async ({ params }: Params) => {
