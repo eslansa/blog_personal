@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import Header from "@/components/Header";
 import PostComponent from "@/components/PostComponent";
 import { Post } from "@/utils/interface";
 import { motion } from 'framer-motion';
