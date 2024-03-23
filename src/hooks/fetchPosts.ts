@@ -14,7 +14,7 @@ export default async function getPosts(){
       slug,
       name
     }
-  } | order(_createdAt desc)
+  } | order(_createdAt desc) [0...5]
   `;
   
     const data = await client.fetch(query);

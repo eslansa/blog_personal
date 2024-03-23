@@ -42,7 +42,7 @@ const PostComponent = ({ post }: Props) => {
       <div>
         {post?.tags?.map((tag, index) => (
           <Link key={tag?._id} href={`/tag/${tag.slug.current}`} >
-            <span key={tag?._id || index} className='inline-flex items-center p-1 rounded-sm text-sm lowercase dark:bg-gray-950 border dark:border-gray-900 mt-2 text-red-500 group-hover:text-white dark:border-gray-90 px-2 py-1 shadow-sm max-w-xs mx-auto'>
+            <span key={tag?._id || index} className='inline-flex items-center p-1 rounded-sm text-sm lowercase dark:bg-gray-950 border dark:border-gray-900 mt-2 text-red-500 group-hover:text-white px-2 py-1 shadow-sm max-w-xs mx-auto'>
               {tagIcons[tag?.name.toLowerCase()]} {/* Renderiza el icono según el nombre del tag */}
               <span className="ml-1">{tag?.name}</span>
             </span>
