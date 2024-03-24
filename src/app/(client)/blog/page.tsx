@@ -13,7 +13,7 @@ export default async function Home() {
 
   return (
     <div>
-      <Header title="Artículos" tags />
+      <Header title="Artículos Recientes" tags />
       <PostList posts={posts.map(post => ({ ...post, key: post._id }))} />
     </div>
   );
