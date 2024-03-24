@@ -1,7 +1,7 @@
 import React from 'react'
 import { client } from '../../../../sanity/lib/client';
-import { Tag } from '@/utils/interface';
-import Header from '@/components/Header';
+import { Tag } from '@/utils/types/interface';
+import Header from '@/components/base/Header';
 import Link from 'next/link';
 
 export const runtime = 'edge' // 'nodejs' (default) | 'edge'

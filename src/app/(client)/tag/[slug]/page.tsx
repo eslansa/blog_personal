@@ -1,7 +1,7 @@
-import Header from '@/components/Header'
+import Header from '@/components/base/Header'
 import React from 'react'
-import { Post } from '@/utils/interface';
-import PostList from '@/components/AnimatedPostComponent';
+import { Post } from '@/utils/types/interface';
+import PostList from '@/components/ui/AnimatedPostComponent';
 import getPostsByTag from '@/hooks/fetchTags';
 
 

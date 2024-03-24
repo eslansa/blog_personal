@@ -1,6 +1,6 @@
 import React from 'react';
 import { Lilita_One } from 'next/font/google';
-import ThemeSwitch from './ThemeSwitch';
+import ThemeSwitch from '../ui/ThemeSwitch';
 import { BiSolidDetail } from 'react-icons/bi';
 
 const font = Lilita_One({ weight: "400", subsets: ["latin"] });

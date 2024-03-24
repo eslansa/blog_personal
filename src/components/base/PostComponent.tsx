@@ -1,4 +1,4 @@
-import { Post } from '@/utils/interface';
+import { Post } from '@/utils/types/interface';
 import { Lilita_One, VT323 } from 'next/font/google';
 import Link from 'next/link';
 import React from 'react';

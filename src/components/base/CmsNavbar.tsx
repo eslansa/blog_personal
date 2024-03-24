@@ -1,7 +1,7 @@
 import { Lilita_One } from 'next/font/google';
 import Link from 'next/link';
 import React from 'react'
-import { BackArrowIcon } from './icons';
+import { BackArrowIcon } from '../../utils/icons';
 
 const font = Lilita_One({weight: "400", subsets: ["latin"] });
 

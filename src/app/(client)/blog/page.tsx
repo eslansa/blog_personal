@@ -1,7 +1,7 @@
-import PostList from "@/components/AnimatedPostComponent";
-import Header from "@/components/Header";
+import PostList from "@/components/ui/AnimatedPostComponent";
+import Header from "@/components/base/Header";
 import getPosts from "@/hooks/fetchPosts";
-import { Post } from "@/utils/interface";
+import { Post } from "@/utils/types/interface";
 
 export const runtime = 'edge'; // 'nodejs' (default) | 'edge'
 

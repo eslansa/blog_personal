@@ -1,4 +1,4 @@
-import SkeletonLoader from "@/components/SkletonLoading";
+import SkeletonLoader from "@/components/ui/SkletonLoading";
 
 export default function Loading() {
   return (

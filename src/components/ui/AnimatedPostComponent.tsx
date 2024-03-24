@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
-import PostComponent from "@/components/PostComponent";
-import { Post } from "@/utils/interface";
+import PostComponent from "@/components/base/PostComponent";
+import { Post } from "@/utils/types/interface";
 import { motion } from 'framer-motion';
 
 interface PostListProps {

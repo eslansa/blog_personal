@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/base/Navbar";
 import { Provider } from "@/utils/Provider";
-import Footer from "@/components/Footer";
+import Footer from "@/components/base/Footer";
 
 export const runtime = 'edge' // 'nodejs' (default) | 'edge'
 

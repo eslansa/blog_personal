@@ -1,6 +1,6 @@
-import Header from "@/components/Header";
+import Header from "@/components/base/Header";
 import React from "react";
-import { Post } from "@/utils/interface";
+import { Post } from "@/utils/types/interface";
 import { VT323 } from "next/font/google";
 import Link from "next/link";
 import { PortableText } from "@portabletext/react";
