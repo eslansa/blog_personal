@@ -39,6 +39,21 @@ export default function SocialAuth() {
       });
     }
   };
+  const twitterLogin = async () => {
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: "twitter",
+      options: {
+        redirectTo: `${location.origin}/auth/callback`,
+      },
+    });
+    if (error) {
+      toast({
+        title: "Error",
+        description: error.message,
+        variant: "destructive",
+      });
+    }
+  };
   return (
     <div>
       <Button variant="outline" className="w-full mb-3" onClick={googleLogin}>
@@ -60,6 +75,16 @@ export default function SocialAuth() {
           className="mr-5"
         />
         Continuar con Github
+      </Button>
+      <Button variant="outline" className="w-full mb-3" onClick={twitterLogin}>
+        <Image
+          src="/images/twitter.png"
+          width={25}
+          height={25}
+          alt="twitter"
+          className="mr-5"
+        />
+        Continuar con Twitter
       </Button>
     </div>
   );

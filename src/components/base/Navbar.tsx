@@ -5,6 +5,7 @@ import { BiSolidDetail } from 'react-icons/bi';
 import NavMenu from './NavMenu';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from "next/headers";
+import Toast from './Toast';
 
 const font = Lilita_One({ weight: "400", subsets: ["latin"] });
 const supabase = createServerComponentClient({ cookies });
@@ -37,6 +38,7 @@ const Navbar = () => {
                         </a>
                     </div>
                     <div className="md:flex justify-center items-center space-x-4">
+                    <Toast />
                         <NavMenu session={session.data?.session} />
                     </div>
                 </div>
