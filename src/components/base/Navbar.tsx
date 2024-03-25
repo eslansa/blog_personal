@@ -2,8 +2,13 @@ import React from 'react';
 import { Lilita_One } from 'next/font/google';
 import ThemeSwitch from '../ui/ThemeSwitch';
 import { BiSolidDetail } from 'react-icons/bi';
+import NavMenu from './NavMenu';
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
+import { cookies } from "next/headers";
 
 const font = Lilita_One({ weight: "400", subsets: ["latin"] });
+const supabase = createServerComponentClient({ cookies });
+const  session = await supabase.auth.getSession();
 
 const Navbar = () => {
     return (
@@ -30,6 +35,9 @@ const Navbar = () => {
                         <a href='https://drive.google.com/file/d/1Vrleigq1aDQf9GG-_3zfHdXTf6_V8cdE/view' target="_blank" rel="noopener noreferrer" aria-label="Download Resume">
                             <BiSolidDetail size={29} />
                         </a>
+                    </div>
+                    <div className="md:flex justify-center items-center space-x-4">
+                        <NavMenu session={session.data?.session} />
                     </div>
                 </div>
             </div>

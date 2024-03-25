@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../../components/base/Navbar";
 import { Provider } from "@/utils/Provider";
 import Footer from "@/components/base/Footer";
+import Toast from "@/components/base/Toast";
 
 export const runtime = 'edge' // 'nodejs' (default) | 'edge'
 
@@ -60,6 +61,7 @@ export default function RootLayout({
       <body className={`${firaCode.className} h-full bg-amber-50 text-indigo-950 dark:bg-slate-950 dark:text-amber-50 dark:selection:bg-red-500`}>
         <Provider>
           <Navbar />
+          <Toast />
           <main className="mx-auto max-w-5xl px-6">
             {children}
           </main>
