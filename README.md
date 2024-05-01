@@ -1,5 +1,5 @@
 👨🏻‍💻  Sobre mí
-     Bienvenido a mi Blog! Soy Eslán Sánchez.
+     Bienvenido a mi Blog! Soy Eslán Sánchez. Visítalo en: https://eslan.pages.dev/
      
     👨‍💻 Actualmente estoy de prácticas en Xetid en la UCI Cuba como desarrollador frontend.
     
@@ -19,32 +19,4 @@
     
         https://drive.google.com/file/d/1Vrleigq1aDQf9GG-_3zfHdXTf6_V8cdE/view
 
-    🛠  Tech Stack
-    
-      Python  JavaScript  Java  C  C++  Bootstrap  HTML5  CSS3  Apache Kafka  Spring  Vue.js  Swagger  Postman  Google Cloud  Figma  Markdown 
-
-    🗃  Databases
-    
-      Redis  MongoDB  Postgres  ElasticSearch 
-
-    🧰  Version Controll & Tools
-    
-      Git  GitHub  Visual Studio Code  Eclipse  Brave  Jenkins Slack  Bitbucket  Confluence  Jira  Notion  Adobe  Canva  Apache Maven  Splunk  SonarLint 
-      💰  Support My Work
-        BuyMeACoffee
-
-
-Experiencia Laboral
-
-Desarrollador Web - Autodidacta (2024)
-
-Desarrollador Frontend - Xetid (2023)
-
-Educación
-Universidad - Universidad de Ciencias Informáticas, La Habana, Cuba (2021)
-IPU - Pedro Valdivia Paz, Ciego de Ávila, Cuba (2016 - 2019)
-Habilidades Técnicas
-React
-Next.js
-TypeScript
-PostgreSQL
+  
