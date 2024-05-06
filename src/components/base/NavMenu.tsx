@@ -1,16 +1,11 @@
-"use client";
-import React from "react";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+
 import { MenuIcon } from "lucide-react";
-import SignupModal from "../auth/SignupModal";
-import LoginModal from "../auth/LoginModal";
-import SignOutBtn from "../auth/SignOutBtn";
-import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
+import React from "react";
+import SignOutBtn from "../auth/SignOutBtn";
+import LoginModal from "../auth/LoginModal";
+import SignupModal from "../auth/SignupModal";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 
 export default function NavMenu({ session }: { session: object | null }) {
   return (

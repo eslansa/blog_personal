@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
+import { NextRequest, NextResponse } from "next/server";
 
 export async function middleware(request: NextRequest) {
   const supabase = createServerComponentClient({ cookies });
@@ -16,5 +16,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/blog","/tag","/posts",],
+  matcher: ["/blog", "/tag", "/posts"],
 };
